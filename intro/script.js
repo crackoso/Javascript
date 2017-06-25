@@ -1,23 +1,29 @@
-// if/else Statements
+// boolean logic
 
-var name = 'John';
-var age = 26;
-var isMarried = 'no';
-
-if(isMarried === 'yes'){
-    console.log(name + ' is married');
-} else {
-    console.log(name + ' will hopefully marry son :)');
+var age = 25;
+if(age < 20){
+    console.log('John is a teenager');
+} else if(age > 20 && age <30 ){
+    console.log('John is a young man');      
+}else {
+    console.log('John is a man');
 }
 
-isMarried = false;
 
-if(isMarried){
-    console.log('YES!');
-} else {
-    console.log('NO!');
+var job = 'teacher'
+
+job = prompt('What does john do?');
+switch(job){
+    case 'teacher':
+        console.log('John teaches kids');
+        break;
+    case 'driver':
+        console.log('john drives a cab in Lisbon');
+        break;
+    case 'cop':
+        console.log('John helps fiht crime.');
+        break;
+    default:
+        console.log('John does something else');
 }
 
-if(23 == '23'){
-    console.log('is the same thing')
-}
