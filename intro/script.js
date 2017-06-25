@@ -1,18 +1,23 @@
-//Operators
+// if/else Statements
 
-var now = 2017
-var birthYear = now - 26;
+var name = 'John';
+var age = 26;
+var isMarried = 'no';
 
-birthYear = now - 26 * 2;
-//2017 - 52
-//1964
+if(isMarried === 'yes'){
+    console.log(name + ' is married');
+} else {
+    console.log(name + ' will hopefully marry son :)');
+}
 
-console.log(birthYear);
+isMarried = false;
 
-var ageJohn = 34;
-var ageMark = 48;
+if(isMarried){
+    console.log('YES!');
+} else {
+    console.log('NO!');
+}
 
-ageJohn = (3+5)*4-6;
-
-console.log(ageJohn);
-
+if(23 == '23'){
+    console.log('is the same thing')
+}
