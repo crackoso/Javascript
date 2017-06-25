@@ -1,37 +1,18 @@
-/* 
-var name = 'Hibran';
-console.log(name);
+//Operators
 
-var lastName = 'Martinez';
-console.log(lastName);
+var now = 2017
+var birthYear = now - 26;
 
-var age = 30;
-console.log(age);
+birthYear = now - 26 * 2;
+//2017 - 52
+//1964
 
-var fullAge = true;
-console.log(fullAge);
-*/
+console.log(birthYear);
 
-var name = 'Hibran';
-var age = 30;
-console.log(name + age);
-console.log(age + age);
+var ageJohn = 34;
+var ageMark = 48;
 
-var job, isMarried;
+ageJohn = (3+5)*4-6;
 
-console.log(job);
+console.log(ageJohn);
 
-job = 'Teacher';
-isMarried = false;
-
-console.log(name + ' is a ' + age + ' years old ' + job + '. Is he married? ' + isMarried + '.');
-
-age = 'Thirty six';
-job = 'Driver';
-
-console.log(name + ' is a ' + age + ' years old ' + job + '. Is he married? ' + isMarried + '.');
-
-var lastName = prompt('What is the last name?');
-console.log(lastName);
-
-alert(name + ' is a ' + age + ' years old ' + job + '. Is he married? ' + isMarried + '.');
