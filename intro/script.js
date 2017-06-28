@@ -1,25 +1,29 @@
-// Arrays
+// Objects and properties
 
-var names = ['Hibran', 'Emmanuel', 'Juan Pablo', 'Bertin Alejo'];
-var years = new Array(1986, 1988, 1990, 1997);
+var john = {
+    name: 'John',
+    lastName: 'Smith',
+    yearOfBirth: 1990,
+    job: 'Teacher',
+    isMarried: false
+}
 
-console.log(names[1]);
-names[2] = 'Mora';
-console.log(names);
+console.log(john);
+console.log(john.lastName);
 
-var john = ['John', 'Smith', 1990, 'teacher', false];
+var xyz = 'Job';
+console.log(john[xyz]);
 
-john.push('blue');
-john.unshift('Mr.');
-john.pop();
-john.shift();
+john.lastName = 'Miller';
+john['job'] = 'programmer';
+
 console.log(john);
 
-var whereIs = john.indexOf(1990);
-console.log(whereIs);
+var jane = new Object();
+jane.name = 'Jane';
+jane.lastName = 'Smith';
+jane['yearOfBirth'] = 1969;
+jane['job'] = 'retired';
+jane['isMarried'] = true;
 
-if(john.indexOf('teacher') === -1){
-    console.log('John is not a teacher');
-} else {
-    console.log('John is a teacher');
-}
+console.log(jane);
