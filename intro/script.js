@@ -15,5 +15,5 @@ if(john > friend){
 } else if( friend > john){
     console.log('Friend Wins: '+ friend);
 } else {
-    console.log('it was a tie');
+    console.log('it was a tie at ' + john);
 }
