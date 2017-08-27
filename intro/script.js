@@ -1,29 +1,17 @@
-// Objects and properties
+// Objects and methods
 
 var john = {
     name: 'John',
     lastName: 'Smith',
     yearOfBirth: 1990,
     job: 'Teacher',
-    isMarried: false
+    isMarried: false,
+    family: ['Jane', 'Mark', 'Bob'],
+    calculateAge: function(){
+        return 2017 - this.yearOfBirth;
+    }
 }
 
-console.log(john);
-console.log(john.lastName);
+john.age = john.calculateAge();
+console.log(john.age);
 
-var xyz = 'Job';
-console.log(john[xyz]);
-
-john.lastName = 'Miller';
-john['job'] = 'programmer';
-
-console.log(john);
-
-var jane = new Object();
-jane.name = 'Jane';
-jane.lastName = 'Smith';
-jane['yearOfBirth'] = 1969;
-jane['job'] = 'retired';
-jane['isMarried'] = true;
-
-console.log(jane);
